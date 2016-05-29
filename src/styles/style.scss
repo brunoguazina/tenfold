@@ -1,11 +1,122 @@
 
+@import "_fonts";
+
 html,
 body {
+	font-family: 'titillium_webregular';
 	margin: 0;
 	padding: 0;
-	background: #f2f2f2;
+	background: #fff;
 }
 
 h1 {
 	text-align: center;
 }
+
+.btn-popUp {
+	text-align: center;
+	vertical-align: middle;
+
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	width: 70px;
+	height: 70px;
+	background-color: #00A1E0;
+	
+	border-radius: 50%;
+	box-shadow: 0px 0px 1px 6px #f2f2f2;
+
+	// TODO: align vertical image
+	img {
+		margin-top: 27%;
+	}
+}
+
+.top {
+	position: relative;
+	padding: 5px 10px;
+}
+
+.popUp {
+	display: none;
+	width: 600px;
+	height: 410px;
+	background-color: #fff;
+
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+
+	border-radius: 5px;
+	box-shadow: 0px 0px 1px 7px #f2f2f2;
+
+	z-index: 1;
+}
+.close {
+	text-align: center;
+
+	background: #00A1E0 url('../images/close.svg') no-repeat center;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+
+	float: right;
+	
+	// TODO: align vertical image
+	img {
+		margin-top: -2px;
+	}
+}
+
+
+.callsHistory {
+	
+	.icon {
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
