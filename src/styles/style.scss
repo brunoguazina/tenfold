@@ -6,6 +6,7 @@ body {
 	font-family: 'titillium_webregular';
 	margin: 0;
 	padding: 0;
+	color: #666;
 }
 
 .btnPopUp {
@@ -52,7 +53,7 @@ body {
 	
 	.close {
 		text-align: center;
-
+		cursor: pointer;
 		background: #00A1E0 url('../images/close.svg') no-repeat center;
 		width: 18px;
 		height: 18px;
@@ -69,7 +70,7 @@ body {
 
 
 .statusCall {
-	padding: 0 12px 0 12px;
+	padding: 0 12px 45px 12px;
     cursor: pointer;
     background-color: #f9f9f9;
 }
@@ -137,6 +138,7 @@ body {
 // PROFILE
 .profile {
 	padding: 10px;
+    margin-top: -50px;
 
 	.photo {
 		display: inline-block;
@@ -164,6 +166,7 @@ body {
 	}
 
 	.phoneNumber {
+		text-decoration: underline;
 		font-size: 22px;
 		color: #00A1E0;
 		display: inline-block;
@@ -174,7 +177,7 @@ body {
 
 	.info {
 		display: block;
-		margin: 5px;
+		margin: 10px 5px;
 		color: #666;
 
 		&:before {
@@ -196,7 +199,7 @@ body {
 // HISTORY //
 .history {
 	padding: 5px 30px;
-	height: 85px;
+	height: 80px;
 
 	.phone {
 		text-align: center;
@@ -216,6 +219,7 @@ body {
 	}
 
 	.logs {
+		min-width: 290px;
 		display: inline-block;
 		vertical-align: -webkit-baseline-middle;
 
@@ -239,12 +243,16 @@ body {
 	}
 	.calls {
 		display: inline-block;
+		vertical-align: top;
 
 		.select {
 			color: #666;
 			text-transform: uppercase;
+    		padding: 5px;
+
 			&:after {
-				vertical-align: middle;
+				vertical-align: top;
+				margin-left: 5px;
 				content: url('../images/arrow.svg');
 			}
 		}
@@ -260,22 +268,31 @@ body {
 	.title {
 		background-color: #ebeff2;
     	text-align: center;
-    	width: 250px;
-    	padding: 5px;
+    	text-transform: uppercase;
+    	width: 300px;
+    	padding: 5px 5px 0 5px;
     	margin: -40px auto 0 auto;
     	display: block;
     	border-radius: 5px;
 	}
 	.content {
+		position: relative;
 		border: 1px solid #ececec;
-		border-radius: 5px;
-		margin: 5px;
-    	padding: 15px;
+    	border-radius: 5px;
+    	margin: 5px;
+    	padding: 15px 100px 15px 15px;
     	background-color: #fff;
-	}
-	.btnSave {
-
-	}
+		
+		.btnSave {
+			padding: 10px 25px;
+    		border-radius: 5px;
+    		background-color: #00A1E0;
+    		color: #fff;
+    		position: absolute;
+    		right: 15px;
+    		top: 30px;
+		}
+	}	
 }
 
 
