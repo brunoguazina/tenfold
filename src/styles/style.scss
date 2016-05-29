@@ -23,11 +23,7 @@ body {
 	
 	border-radius: 50%;
 	box-shadow: 0px 0px 1px 6px #f2f2f2;
-
-	// TODO: align vertical image
-	img {
-		margin-top: 27%;
-	}
+	background: #00A1E0 url('../images/icon-logo.svg') no-repeat center center;
 }
 
 .popUp {
@@ -37,19 +33,22 @@ body {
 	background-color: #fff;
 
 	position: absolute;
-	right: 25px;
-	bottom: 25px;
+	right: 20px;
+	bottom: 20px;
 
 	border-radius: 5px;
-	box-shadow: 0px 0px 1px 7px #f2f2f2;
+	-webkit-box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.13);
+	box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.13);
 
 	z-index: 1;
 }
 
 .top {
 	position: relative;
-	padding: 2px 5px;
+	padding: 5px;
 	background-color: #f9f9f9;
+	border-radius: 5px;
 	
 	.close {
 		text-align: center;
@@ -70,13 +69,13 @@ body {
 
 
 .statusCall {
-	padding: 0 12px 45px 12px;
+	padding: 0 12px 40px 12px;
     cursor: pointer;
     background-color: #f9f9f9;
 }
 
 .callsHistory {
-		width: 190px;
+		width: 187px;
 	    display: inline-block;
 	    vertical-align: text-bottom;
 		
@@ -87,29 +86,46 @@ body {
 			height: 38px;
 			border-radius: 50%;
 			border: 1px solid #ccc;
+			background: url(../images/return.svg) no-repeat center center;
 		}
 
 	    div {
+	    	font-family: 'titillium_weblight';
 			display: inline-block;
-			text-transform: uppercase;
-			color: #666;
-			font-size: 14px;
-			vertical-align: -webkit-baseline-middle;
+    		text-transform: uppercase;
+    		color: #666;
+    		font-size: 14px;
+    		vertical-align: top;
+    		margin-top: 11px;
 		}
 }	
 
 // CALL INFO //
 .callInfo {
 	text-align: right;
-	width: 66%;
+	width: 385px;
 	display: inline-block;
 
 	.status {
 		display: inline-block;
 		
 		span {
-			display: block;
-			vertical-align: -webkit-baseline-middle;
+			font-family: 'titillium_webbold';
+    		color: #fff;
+    		vertical-align: -webkit-baseline-middle;
+    		margin: 2px;
+    		padding: 0px 5px;
+    		border-radius: 5px;
+    		text-transform: uppercase;
+    		display: table;
+    		font-size: 15px;
+
+			&.on {
+				background-color: #00D95A;
+			}
+			&.off {
+				background-color: #ccc;
+			}
 		}
 	}
 
@@ -128,10 +144,7 @@ body {
 		height: 38px;
 		border-radius: 50%;
 		border: 1px solid #ccc;
-		
-		img {
-			vertical-align: middle;
-		}
+		background: url(../images/phone.svg) no-repeat center center;
 	}
 }
 
@@ -142,7 +155,6 @@ body {
 
 	.photo {
 		display: inline-block;
-		border: 1px dashed #f0f0f0;
 	}
 
 	.content {
@@ -159,7 +171,7 @@ body {
 		}
 		.onLine {
 			display: inline-block;
-			padding: 5px;
+			padding: 6px;
 			border-radius: 50%;
 			background-color: #00D95A;
 		}
@@ -212,10 +224,7 @@ body {
 		border: 1px solid #ccc;
 		vertical-align: -webkit-baseline-middle;
 
-		img{
-			top: 50%;
-			transform: translateY(-50%);
-		}
+		background: url(../images/phoneBig.svg) no-repeat center center;		
 	}
 
 	.logs {
@@ -227,13 +236,16 @@ body {
 			display: inline-block;
 
 			.title {
-				padding: 2px 5px;
-				text-transform: uppercase;
-				background: #ccc;
-				color: #fff;
-				border-radius: 5px;
+				font-family: 'titillium_webbold';
+    			font-size: 15px;
+    			padding: 0px 5px;
+    			text-transform: uppercase;
+    			background: #ccc;
+    			color: #fff;
+    			border-radius: 5px;
 			}
 			.content {
+				font-size: 15px;
 				text-align: center;
 				text-transform: uppercase;
 				color: #666;
@@ -264,8 +276,10 @@ body {
 .notes {
 	background-color: #ebeff2;
 	padding: 25px 5px 5px 5px; 
+	border-radius: 5px;
 
 	.title {
+		font-family: 'titillium_weblight';
 		background-color: #ebeff2;
     	text-align: center;
     	text-transform: uppercase;
@@ -276,6 +290,7 @@ body {
     	border-radius: 5px;
 	}
 	.content {
+		font-family: 'titillium_weblight';
 		position: relative;
 		border: 1px solid #ececec;
     	border-radius: 5px;
@@ -284,6 +299,7 @@ body {
     	background-color: #fff;
 		
 		.btnSave {
+			text-transform: uppercase;
 			padding: 10px 25px;
     		border-radius: 5px;
     		background-color: #00A1E0;
@@ -291,6 +307,7 @@ body {
     		position: absolute;
     		right: 15px;
     		top: 30px;
+    		cursor: pointer;
 		}
 	}	
 }
