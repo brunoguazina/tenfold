@@ -6,7 +6,7 @@ var browserSync = require('browser-sync');
 var htmlReplace = require('gulp-html-replace');
 
 
-gulp.task('default', ['browser-sync'], function(){
+gulp.task('default', ['browser-sync', 'images', 'fonts'], function(){
 
   gulp.watch("src/styles/**/*.scss", ['sass']);
   gulp.watch("src/scripts/**/*.js", ['scripts']);

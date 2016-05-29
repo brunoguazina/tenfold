@@ -1,6 +1,6 @@
 console.log('Haaa');
 
-$('.btn-popUp').on('click', function() {
+$('.btnPopUp').on('click', function() {
 	$('.popUp').show();
 });
 

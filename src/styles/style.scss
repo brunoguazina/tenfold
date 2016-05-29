@@ -13,7 +13,7 @@ h1 {
 	text-align: center;
 }
 
-.btn-popUp {
+.btnPopUp {
 	text-align: center;
 	vertical-align: middle;
 
@@ -35,7 +35,8 @@ h1 {
 
 .top {
 	position: relative;
-	padding: 5px 10px;
+	padding: 5px;
+	background-color: #f9f9f9;
 }
 
 .popUp {
@@ -70,24 +71,152 @@ h1 {
 }
 
 
-.callsHistory {
-	
+.statusCall {
+	padding: 0 12px 0 12px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+
 	.icon {
-		
+		text-align: center;
+		display: inline-block;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		border: 1px solid #ccc;
+	}
+	span {
+		display: inline-block;
+		text-transform: uppercase;
+		color: #666;
+		font-size: 14px;
+		vertical-align: -webkit-baseline-middle;
+	}
+	.callInfolsHistory {
+		width: 25%;
+	    display: inline-block;
+	    vertical-align: text-bottom;
+	}	
+
+	.profile {
+		padding: 10px;
+
+		.photo {
+			display: inline-block;
+		}
+		.content {
+			position: relative;
+			display: inline-block;
+			width: 460px;
+			vertical-align: top;
+			.name {
+				vertical-align: top;
+				display: inline-block;
+				font-size: 22px;
+				color: #666;
+				.onLine {
+					display: inline-block;
+					padding: 5px;
+					border-radius: 50%;
+					background-color: #00D95A;
+					vertical-align: -webkit-baseline-middle;
+				}
+			}
+			.phoneNumber {
+				font-size: 22px;
+				color: #00A1E0;
+				display: inline-block;
+		    	vertical-align: top;
+		    	right: 0;
+		    	position: absolute;
+			}
+			.info {
+				display: block;
+
+				&:before {
+					content: url('../images/icon-info.svg');
+				}
+			}
+		}
 	}
 }
 
 
 
+.callInfo {
+	text-align: right;
+	width: 74%;
+	display: inline-block;
+	.status {
+		display: inline-block;
+		
+		span {
+			display: block;
+			vertical-align: -webkit-baseline-middle;
+		}
+	}
+	.timer {
+		display: inline-block;
+		font-size: 42px;
+		color: #666;
+		padding: 0 10px;
+	}
+	.icon {
+		display: inline-block;
+		vertical-align: text-bottom;
+		
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.history {
+	padding: 10px;
+
+	.phone {
+		text-align: center;
+		display: inline-block;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		border: 1px solid #ccc;
+		img{
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.log {
+		display: inline-block;
+	}
+}
 
 
 
+.notes {
+	background-color: #ebeff2;
+	padding: 25px 5px 5px 5px; 
 
+	.title {
+		background-color: #ebeff2;
+		position: absolute;
+		text-align: center;
+		width: 250px;
+		padding: 5px;
+		margin: -35px auto 0 auto;
+		display: block;
+		border-radius: 5px;
+	}
+	.content {
+		margin: 5px;
+    	padding: 15px;
+    	background-color: #fff;
+	}
+	.btnSave {
 
-
-
-
-
+	}
+}
 
 
 
